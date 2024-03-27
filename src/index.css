@@ -106,3 +106,46 @@ button:focus-visible {
 .user-table tr:hover {
   background-color: #f0f0f0;
 }
+
+
+
+
+
+
+
+
+/* form */
+.form-container {
+  /* width: 300px; */
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group {
+  width: auto;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

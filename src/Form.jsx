@@ -32,50 +32,64 @@ function Form({ addData }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="id"
-        placeholder="ID"
-        value={formData.id}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="name"
-        placeholder="name"
-        value={formData.name}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="gender"
-        placeholder="gender"
-        value={formData.gender}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="year_of_birth"
-        placeholder="year_of_birth"
-        value={formData.year_of_birth}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="province"
-        placeholder="province"
-        value={formData.province}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="position"
-        placeholder="position"
-        value={formData.position}
-        onChange={handleChange}
-      />
-      <button type="submit">Thêm</button>
+    <form className="form-container" onSubmit={handleSubmit}>
+      <div className="input-group">
+        <input
+          type="text"
+          name="id"
+          placeholder="ID"
+          value={formData.id}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="input-group">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="input-group">
+        <input
+          type="text"
+          name="gender"
+          placeholder="Gender"
+          value={formData.gender}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="input-group">
+        <input
+          type="text"
+          name="year_of_birth"
+          placeholder="Year of Birth"
+          value={formData.year_of_birth}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="input-group">
+        <input
+          type="text"
+          name="province"
+          placeholder="Province"
+          value={formData.province}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="input-group">
+        <input
+          type="text"
+          name="position"
+          placeholder="Position"
+          value={formData.position}
+          onChange={handleChange}
+        />
+      </div>
+      <button className="button" type="submit">
+        Thêm
+      </button>
     </form>
   );
 }
