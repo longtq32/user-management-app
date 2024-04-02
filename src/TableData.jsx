@@ -8,6 +8,8 @@ function TableData() {
 
   const [edittingItem, setEdittingItem] = useState(null);
 
+  const [inputValue, setInputValue] = useState("");
+
   const handleEditUser = (editedUser) => {
     const userIndex = users.findIndex((user) => user.id === editedUser.id);
 
@@ -42,11 +44,14 @@ function TableData() {
         };
       }
       return item;
-
     });
-
     setUsers(newData);
     setEdittingItem(null);
+  };
+
+  const handleChange = (event) => {
+    const value = event.target.value;
+    setInputValue(value);
   };
 
   const addData = (newData) => {
